@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <TextView
+        android:id="@+id/calendarTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="Calendar"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/White"
+        android:textSize="45sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/calendarDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calendarTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="2013/3"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/White"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/calendarLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarDate"
+        android:layout_alignBottom="@+id/calendarDate"
+        android:layout_alignLeft="@+id/calendarTitle"
+        android:tag="calendarLeft"
+        android:text="←"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/calendarRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarDate"
+        android:layout_alignBottom="@+id/calendarDate"
+        android:layout_alignRight="@+id/calendarTitle"
+        android:tag="calendarRight"
+        android:text="→"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/calendarWed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calendarRight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="水"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/White"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/calendarTue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarWed"
+        android:layout_alignBottom="@+id/calendarWed"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/calendarWed"
+        android:text="火"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/White"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/calendarMon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarTue"
+        android:layout_alignBottom="@+id/calendarTue"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/calendarTue"
+        android:text="月"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/White"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/calendarSun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarMon"
+        android:layout_alignBottom="@+id/calendarMon"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/calendarMon"
+        android:text="日"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/White"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/calendarThu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarWed"
+        android:layout_alignBottom="@+id/calendarWed"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/calendarWed"
+        android:text="木"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/White"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/calendarFri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarThu"
+        android:layout_alignBottom="@+id/calendarThu"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/calendarThu"
+        android:text="金"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/White"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/calendarSat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarFri"
+        android:layout_alignBottom="@+id/calendarFri"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/calendarFri"
+        android:text="土"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/White"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/calendarButton3"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton4"
+        android:layout_alignBottom="@+id/calendarButton4"
+        android:layout_alignRight="@+id/calendarTue"
+        android:text="3"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton3"
+        android:layout_alignBottom="@+id/calendarButton3"
+        android:layout_alignRight="@+id/calendarMon"
+        android:text="2"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton2"
+        android:layout_alignBottom="@+id/calendarButton2"
+        android:layout_alignRight="@+id/calendarSun"
+        android:text="1"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton4"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calendarWed"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/calendarThu"
+        android:text="4"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton5"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton4"
+        android:layout_alignBottom="@+id/calendarButton4"
+        android:layout_alignRight="@+id/calendarThu"
+        android:text="5"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton6"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton5"
+        android:layout_alignBottom="@+id/calendarButton5"
+        android:layout_toLeftOf="@+id/calendarSat"
+        android:text="6"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton7"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton6"
+        android:layout_alignBottom="@+id/calendarButton6"
+        android:layout_alignRight="@+id/calendarSat"
+        android:text="7"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton10"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton11"
+        android:layout_alignBottom="@+id/calendarButton11"
+        android:layout_alignLeft="@+id/calendarButton3"
+        android:text="10"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton9"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton10"
+        android:layout_alignBottom="@+id/calendarButton10"
+        android:layout_alignLeft="@+id/calendarButton2"
+        android:text="9"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton8"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton9"
+        android:layout_alignBottom="@+id/calendarButton9"
+        android:layout_alignLeft="@+id/calendarButton1"
+        android:text="8"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton12"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton11"
+        android:layout_alignBottom="@+id/calendarButton11"
+        android:layout_alignLeft="@+id/calendarButton5"
+        android:text="12"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton13"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton12"
+        android:layout_alignBottom="@+id/calendarButton12"
+        android:layout_alignLeft="@+id/calendarButton6"
+        android:text="13"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton11"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/calendarButton4"
+        android:layout_below="@+id/calendarButton4"
+        android:layout_marginTop="10dp"
+        android:text="11"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton14"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton13"
+        android:layout_alignBottom="@+id/calendarButton13"
+        android:layout_alignLeft="@+id/calendarButton7"
+        android:text="14"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton18"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/calendarButton11"
+        android:layout_below="@+id/calendarButton11"
+        android:layout_marginTop="10dp"
+        android:text="18"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton17"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton18"
+        android:layout_alignBottom="@+id/calendarButton18"
+        android:layout_alignLeft="@+id/calendarButton10"
+        android:text="17"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton16"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton17"
+        android:layout_alignBottom="@+id/calendarButton17"
+        android:layout_alignLeft="@+id/calendarButton9"
+        android:text="16"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton15"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton16"
+        android:layout_alignBottom="@+id/calendarButton16"
+        android:layout_alignLeft="@+id/calendarButton8"
+        android:text="15"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton19"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton18"
+        android:layout_alignBottom="@+id/calendarButton18"
+        android:layout_alignLeft="@+id/calendarButton12"
+        android:text="19"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton20"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton19"
+        android:layout_alignBottom="@+id/calendarButton19"
+        android:layout_alignLeft="@+id/calendarButton13"
+        android:text="20"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton21"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton20"
+        android:layout_alignBottom="@+id/calendarButton20"
+        android:layout_alignLeft="@+id/calendarButton14"
+        android:text="21"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton25"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/calendarButton18"
+        android:layout_below="@+id/calendarButton18"
+        android:layout_marginTop="10dp"
+        android:text="25"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton24"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton25"
+        android:layout_alignBottom="@+id/calendarButton25"
+        android:layout_alignLeft="@+id/calendarButton17"
+        android:text="24"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton23"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton24"
+        android:layout_alignBottom="@+id/calendarButton24"
+        android:layout_alignLeft="@+id/calendarButton16"
+        android:text="23"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton22"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton23"
+        android:layout_alignBottom="@+id/calendarButton23"
+        android:layout_alignLeft="@+id/calendarButton15"
+        android:text="22"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton26"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton25"
+        android:layout_alignBottom="@+id/calendarButton25"
+        android:layout_alignLeft="@+id/calendarButton19"
+        android:text="26"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton27"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton26"
+        android:layout_alignBottom="@+id/calendarButton26"
+        android:layout_alignLeft="@+id/calendarButton20"
+        android:text="27"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton28"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton27"
+        android:layout_alignBottom="@+id/calendarButton27"
+        android:layout_alignLeft="@+id/calendarButton21"
+        android:text="28"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton32"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/calendarButton25"
+        android:layout_below="@+id/calendarButton25"
+        android:layout_marginTop="10dp"
+        android:text="32"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton31"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton32"
+        android:layout_alignBottom="@+id/calendarButton32"
+        android:layout_alignLeft="@+id/calendarButton24"
+        android:text="31"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton30"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton31"
+        android:layout_alignBottom="@+id/calendarButton31"
+        android:layout_alignLeft="@+id/calendarButton23"
+        android:text="30"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton29"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton30"
+        android:layout_alignBottom="@+id/calendarButton30"
+        android:layout_alignLeft="@+id/calendarButton22"
+        android:text="29"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton33"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton32"
+        android:layout_alignBottom="@+id/calendarButton32"
+        android:layout_alignLeft="@+id/calendarButton26"
+        android:text="33"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton34"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton33"
+        android:layout_alignBottom="@+id/calendarButton33"
+        android:layout_alignLeft="@+id/calendarButton27"
+        android:text="34"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton35"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton34"
+        android:layout_alignBottom="@+id/calendarButton34"
+        android:layout_alignLeft="@+id/calendarButton28"
+        android:text="35"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton39"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/calendarButton32"
+        android:layout_below="@+id/calendarButton32"
+        android:layout_marginTop="10dp"
+        android:text="39"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton38"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton39"
+        android:layout_alignBottom="@+id/calendarButton39"
+        android:layout_alignLeft="@+id/calendarButton31"
+        android:text="38"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton37"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton38"
+        android:layout_alignBottom="@+id/calendarButton38"
+        android:layout_alignLeft="@+id/calendarButton30"
+        android:text="37"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton36"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton37"
+        android:layout_alignBottom="@+id/calendarButton37"
+        android:layout_alignLeft="@+id/calendarButton29"
+        android:text="36"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton40"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton39"
+        android:layout_alignBottom="@+id/calendarButton39"
+        android:layout_alignLeft="@+id/calendarButton33"
+        android:text="40"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton41"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton40"
+        android:layout_alignBottom="@+id/calendarButton40"
+        android:layout_alignLeft="@+id/calendarButton34"
+        android:text="41"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calendarButton42"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calendarButton41"
+        android:layout_alignBottom="@+id/calendarButton41"
+        android:layout_alignLeft="@+id/calendarButton35"
+        android:text="42"
+        android:textSize="20sp" />
+
+</RelativeLayout>

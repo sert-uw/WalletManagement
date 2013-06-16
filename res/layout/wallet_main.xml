@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/fundMainTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="Wallet Management"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/White"
+        android:textSize="45sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/fundMainInfo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fundMainSubTitle1"
+        android:layout_alignBottom="@+id/fundMainSubTitle1"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/White"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/fundMainYen1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fundMainInfo1"
+        android:layout_alignBottom="@+id/fundMainInfo1"
+        android:layout_alignRight="@+id/fundMainTitle"
+        android:text="円"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/White"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/fundMainInput1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fundMainCashButton"
+        android:layout_alignBottom="@+id/fundMainCashButton"
+        android:layout_marginRight="26dp"
+        android:layout_toLeftOf="@+id/fundMainCashButton"
+        android:ems="5"
+        android:gravity="center_vertical|right"
+        android:inputType="number"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/fundMainCashButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/fundMainYen1"
+        android:layout_below="@+id/fundMainYen1"
+        android:layout_marginTop="24dp"
+        android:tag="cashRegister"
+        android:text="出費登録"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/fundMainSubTitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fundMainTitle"
+        android:layout_below="@+id/fundMainTitle"
+        android:layout_marginTop="46dp"
+        android:text="現金"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/White"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/fundMainSubTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fundMainSubTitle1"
+        android:layout_below="@+id/fundMainCashButton"
+        android:layout_marginTop="52dp"
+        android:text="預金"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/White"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/fundMainInfo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fundMainSubTitle2"
+        android:layout_alignBottom="@+id/fundMainSubTitle2"
+ 	    android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/White"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/fundMainYen2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fundMainInfo2"
+        android:layout_alignBottom="@+id/fundMainInfo2"
+        android:layout_alignRight="@+id/fundMainCashButton"
+        android:text="円"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/White"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/fundMainDepoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/fundMainYen2"
+        android:layout_below="@+id/fundMainYen2"
+        android:layout_marginTop="26dp"
+        android:tag="depoRegister"
+        android:text="引出登録"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/fundMainInput2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fundMainDepoButton"
+        android:layout_alignLeft="@+id/fundMainInput1"
+        android:ems="5"
+        android:gravity="center_vertical|right"
+        android:inputType="number"
+        android:textSize="25sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fundMainInput2"
+        android:layout_marginTop="47dp" >
+
+        <Button
+            android:id="@+id/fundMainDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:tag="detail"
+            android:text="詳細登録"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/fundMainItems"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="40dp"
+            android:tag="item"
+            android:text="各種内訳"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

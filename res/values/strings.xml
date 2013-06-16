@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Wallet Management</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string-array name="fundDetailSpinner1">
+        <item>---</item>
+        <item>収入</item>
+        <item>支出</item>
+    </string-array>
+    <string-array name="fundDetailSpinner2">
+        <item>---</item>
+        <item>現金</item>
+        <item>預金</item>
+    </string-array>
+    <string-array name="fundDetailSpinner3">
+        <item>---</item>
+        <item>通常</item>
+        <item>引出</item>
+        <item>預入</item>
+    </string-array>
+    <string-array name="fundDetailSpinner3_sub1">
+        <item>---</item>
+        <item>通常</item>
+        <item>引出</item>
+    </string-array>
+    <string-array name="fundDetailSpinner3_sub2">
+        <item>---</item>
+        <item>通常</item>
+        <item>預入</item>
+    </string-array>
+    <string-array name="fundDetailSpinner3_sub3">
+        <item>---</item>
+    </string-array>
+    <string-array name="colorSpinner">
+        <item>ブラック</item>
+        <item>ホワイト</item>
+        <item>グレイ</item>
+
+        <item>シルバー</item>
+        <item>レッド</item>
+        <item>ダークレッド</item>
+
+        <item>オレンジレッド</item>
+        <item>ブルー</item>
+        <item>ネイビー</item>
+
+        <item>ライトブルー</item>
+        <item>パープル</item>
+        <item>インディゴ</item>
+
+        <item>マゼンタ</item>
+        <item>ピンク</item>
+        <item>グリーン</item>
+
+        <item>ダークグリーン</item>
+        <item>ライトグリーン</item>
+        <item>イエロー</item>
+
+        <item>オレンジ</item>
+        <item>カーキ</item>
+        <item>ブラウン</item>
+
+        <item>チョコレート</item>
+        <item>ベージュ</item>
+    </string-array>
+
+</resources>

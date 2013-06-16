@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/settingButton" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1032dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TextView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/bgColor"
+                android:gravity="center"
+                android:text="画像変更"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/menuColor"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/settingItem1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:tag="setting1"
+                android:text="背景"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/White"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/TextView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/bgColor"
+                android:gravity="center"
+                android:text="フォント変更"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/menuColor"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/settingItem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:tag="setting2"
+                android:text="タイトルフォント"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/White"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/settingItem3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:tag="setting3"
+                android:text="テキストフォント"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/White"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/TextView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/bgColor"
+                android:gravity="center"
+                android:text="カラー変更"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/menuColor"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/settingItem4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:tag="setting4"
+                android:text="背景"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/White"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/settingItem5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:tag="setting5"
+                android:text="タイトル"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/White"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/settingItem6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:tag="setting6"
+                android:text="テキスト"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/White"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/settingItem7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:tag="setting7"
+                android:text="トップ金額"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/White"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/settingItem8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:tag="setting8"
+                android:text="ボタン"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/White"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/settingItem9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:tag="setting9"
+                android:text="収入の文字"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/White"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/settingItem10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:tag="setting10"
+                android:text="支出の文字"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/White"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/settingItem11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:tag="setting11"
+                android:text="現金の文字"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/White"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/settingItem12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:tag="setting12"
+                android:text="預金の文字"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/White"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/settingItem13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:tag="setting13"
+                android:text="カテゴリの文字"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/White"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/settingItem14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:tag="setting14"
+                android:text="収入の金額"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/White"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/settingItem15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:tag="setting15"
+                android:text="支出の金額"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/White"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/settingItem16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:tag="setting16"
+                android:text="コメント"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/White"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/settingItem17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:tag="setting17"
+                android:text="日付"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/White"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/TextView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="各種変更"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/topColor"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/settingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView16"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="設定リセット" />
+
+</RelativeLayout>

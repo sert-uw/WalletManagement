@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+
+    <TextView
+        android:id="@+id/fundItemDetailTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="Wallet Management"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/White"
+        android:textSize="45sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/fundItemDetailDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fundItemDetailTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:tag="itemDetailDate"
+        android:text="2013/3/14"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/White"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/fundItemDetailYen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fundItemDetailInput"
+        android:layout_toRightOf="@+id/fundItemDetailInput"
+        android:text="円"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/White"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/fundItemDetailComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fundItemDetailTitle"
+        android:layout_below="@+id/fundItemDetailYen"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="25sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/fundItemDetailButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fundItemDetailComment"
+        android:layout_marginTop="52dp"
+        android:layout_toLeftOf="@+id/fundItemDetailDate"
+        android:tag="itemDetailRevise"
+        android:text="修正"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/fundItemDetailButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fundItemDetailButton1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:tag="itemDetailReturn"
+        android:text="戻る"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/fundItemDetailButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fundItemDetailButton1"
+        android:layout_toRightOf="@+id/fundItemDetailDate"
+        android:tag="itemDetailDelete"
+        android:text="削除"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/fundItemDetailCD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fundItemDetailDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="現金"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/White"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/fundItemDetailInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fundItemDetailCD"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:ems="5"
+        android:inputType="number"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/fundItemDetailIO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/fundItemDetailCD"
+        android:layout_toLeftOf="@+id/fundItemDetailDate"
+        android:text="収入"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/White"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/fundItemDetailCA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/fundItemDetailCD"
+        android:layout_toRightOf="@+id/fundItemDetailDate"
+        android:text="通常"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/White"
+        android:textSize="30sp" />
+
+</RelativeLayout>

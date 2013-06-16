@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <TextView
+        android:id="@+id/fundItemTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="Wallet Management"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/White"
+        android:textSize="45sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/fundItemSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fundItemTitle"
+        android:layout_below="@+id/fundItemTitle"
+        android:tag="search"
+        android:text="検索"
+        android:textSize="25sp" />
+
+    <Spinner
+        android:id="@+id/fundItemSpinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/fundItemSpinner1"
+        android:layout_toRightOf="@+id/fundItemSubTitle"
+        android:entries="@array/fundDetailSpinner2" />
+
+    <Spinner
+        android:id="@+id/fundItemSpinner3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fundItemSpinner1"
+        android:layout_centerHorizontal="true"
+        android:entries="@array/fundDetailSpinner3" />
+
+    <TextView
+        android:id="@+id/fundItemDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fundItemSpinner3"
+        android:layout_centerHorizontal="true"
+        android:tag="date"
+        android:text="2013/3/14"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/White"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/fundItemLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/fundItemDate"
+        android:tag="left"
+        android:text="←"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/fundItemRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/fundItemDate"
+        android:tag="right"
+        android:text="→"
+        android:textSize="30sp" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fundItemLeft"
+        android:layout_centerHorizontal="true" >
+
+        <LinearLayout
+            android:id="@+id/fundItemLinear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Spinner
+        android:id="@+id/fundItemSpinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fundItemSubTitle"
+        android:layout_toLeftOf="@+id/fundItemSubTitle"
+        android:entries="@array/fundDetailSpinner1" />
+
+    <TextView
+        android:id="@+id/fundItemSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fundItemSearch"
+        android:layout_centerHorizontal="true"
+        android:text="絞り込み"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/White"
+        android:textSize="30sp" />
+
+</RelativeLayout>
